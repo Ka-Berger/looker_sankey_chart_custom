@@ -1,15 +1,17 @@
-    constant: vis_id {
-        value: "kb_sankey_id"
-        export: override_optional
-    }
-    constant: vis_label {
-        value: "kb_sankey_chart"
-        export: override_optional
-    }
-    visualization: {
-        id: "@{vis_id}"
-        label: "@{vis_label}"
-        file: "my_local.js"
-        sri_hash: "my_sri_hash"
-        dependencies: []
-    }
+project_name: "sankey-custom-chart-marketplace"
+
+constant: VIS_LABEL {
+  value: "Sankey Custom Chart"
+  export: override_optional
+}
+
+constant: VIS_ID {
+  value: "sankey-custom-chart-marketplace"
+  export:  override_optional
+}
+
+visualization: {
+  id: "@{VIS_ID}"
+  file: "sankey_custom.js"
+  label: "@{VIS_LABEL}"
+}

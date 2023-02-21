@@ -1,16 +1,16 @@
 {
-  "label": "KB Sankey Visualization",
-  "category_label": "plug-ins",
+  "label": "Sankey Custom Chart",
+  "category_label": "Plug-ins",
   "branding": {
     "image_uri": "",
-    "tagline": "Use the KS Sankey visualization to display sanskey chart"
+    "tagline": "Use the Sankey Custom Chart to display a sankey chart"
   },
    "constants": {
-        "vis_label": {
-            "label": "KB Sankey Label",
+        "VIS_LABEL": {
+            "label": "Sankey Label",
             "description": "This label will appear in the visualization selector in the Looker Explore UI."
         },
-        "vis_id": {
+        "VIS_ID": {
             "label": "kb_sankey_Id",
             "description": "This must be a unique ID across all visualizations.",
             "value_constraint": "visualization"

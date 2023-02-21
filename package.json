@@ -1,13 +1,8 @@
 {
-  "name": "looker-custom-chart",
-  "version": "1.0.0",
-  "license": "MIT",
-  "description": "A selection of sample visualizations for use as Looker visualizations",
-  "main": "demo/index.html",
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
-  },
+  "name": "custom-sankey-chart",
+  "version": "0.0.1",
+  "description": "A sankey custom chart",
+  "main": "",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --config webpack.config.js --watch --progress",
@@ -15,7 +10,7 @@
     "lint-fix": "tslint --fix --project tsconfig.json  --format stylish 'src/**/*.ts'",
     "test": "jest"
   },
-  "author": "",
+  "author": "ka-dev",
   "private": true,
   "devDependencies": {
     "@types/jquery": "^3.3.31",
