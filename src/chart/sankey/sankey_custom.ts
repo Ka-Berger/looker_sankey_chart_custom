@@ -26,7 +26,7 @@ const vis: Sankey = {
       type: 'array',
       label: 'Color Range',
       display: 'colors',
-      default: ['#1f6be8', '#12B5CB', '#079c98', '#7CB342',
+      default: ['#4D2B77', '#079c98', '#9A73BF', '#135358', '#741B47', '#3C4268', '#4D2B77', '#1f6be8', '#12B5CB', '#079c98', '#7CB342',
         '#F9AB00', '#FF8168', '#E8710A', '#EA4335',
         '#E52592', '#9334E6', '#80868B', '#e8e366',
         '#a6e86e', '#c12fe8', '#181ee8', '#3994e8',
