@@ -53,7 +53,7 @@ Go in your folder, where you can find your minified code JS.
 - Here, click on `Add Visualization`
 - Give an unique and explicite ID
 - Give an explicite label to your visualization. The name to find your viz in the list after. Start the name with `DEV ONLY`to specify this viz is not available.
-- In the main, paste the url of your localhost with the path to your minifed code JS. Like : `https://localhost:4443/dist/sankey_custom.js` and Save.
+- In the main, paste the url of your localhost with the path to your minifed code JS. Like : `https://localhost:4443/sankey_custom.js` and Save.
 
 
 ## From Github
