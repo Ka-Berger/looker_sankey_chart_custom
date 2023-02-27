@@ -5,10 +5,10 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var webpackConfig = {
   mode: 'production',
   entry: {
-    sankey: './src/sankey/sankey_custom.ts',
+    sankey_custom: './src/sankey/sankey_custom.ts',
   },
   output: {
-    filename: "[name]_custom.js",
+    filename: "[name].js",
     path: path.join(__dirname),
     library: "[name]",
     libraryTarget: "umd"
