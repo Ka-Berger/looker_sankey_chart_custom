@@ -25,19 +25,21 @@ Files you need in your repo at the root for Looker when you will use your repo G
 - VIS_LABEL.value : the name of your viz
 - VIS_ID.value: an unique id for your viz
 **marketplace.json** :  A JSON file containing information that the marketplace installer uses to configure this project.
-- "label": you can use the same name as your LABEL.value or another name. Be explicite
-- "category_label": here it's `Plug-in`
-- "branding": 
---"image_uri": the url of your icon viz (if you have it or empty string `""`
---"tagline": a simple description of your viz and viz functions.
-- "constants": {
---"VIS_LABEL":
---- "label": you can use the same as LABEL.value (or not)
----"description": "This label will appear in the visualization selector in the Looker Explore UI."
--- "VIS_ID":
----"label":you can use the same as VIS_ID (or not)
----"description": "This must be a unique ID across all visualizations.",
----"value_constraint": "visualization"
+```
+"label": you can use the same name as your LABEL.value or another name. Be explicite
+"category_label": here it's `Plug-in`
+"branding": 
+-"image_uri": the url of your icon viz (if you have it or empty string `""`
+-"tagline": a simple description of your viz and viz functions.
+"constants": {
+ "VIS_LABEL":
+  "label": you can use the same as LABEL.value (or not)
+  "description": "This label will appear in the visualization selector in the Looker Explore UI."
+ "VIS_ID":
+  "label":you can use the same as VIS_ID (or not)
+  "description": "This must be a unique ID across all visualizations.",
+  "value_constraint": "visualization"
+```
 
 ## Dev local
 
