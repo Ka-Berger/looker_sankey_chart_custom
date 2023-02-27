@@ -29,8 +29,8 @@ Files you need in your repo at the root for Looker when you will use your repo G
 "label": you can use the same name as your LABEL.value or another name. Be explicite
 "category_label": here it's `Plug-in`
 "branding": 
--"image_uri": the url of your icon viz (if you have it or empty string `""`
--"tagline": a simple description of your viz and viz functions.
+ "image_uri": the url of your icon viz (if you have it or empty string `""`
+ "tagline": a simple description of your viz and viz functions.
 "constants": {
  "VIS_LABEL":
   "label": you can use the same as LABEL.value (or not)
