@@ -18,6 +18,27 @@ To compile your code
 
 # Add in Looker
 
+Files you need in your repo at the root for Looker when you will use your repo GitHub
+**your_file.js** : The minified distribution file of this visualization.
+**LICENSE** : Looker marketplace content license file (this one is not required for it to work, but better to have it when it is finished if you want to post on the marketplace)
+**manifest.lkml** : Le fichier de configuration des dépendances externes de Looker. L'objet de la visualisation est défini ici
+- VIS_LABEL.value : the name of your viz
+- VIS_ID.value: an unique id for your viz
+**marketplace.json** :  A JSON file containing information that the marketplace installer uses to configure this project.
+- "label": you can use the same name as your LABEL.value or another name. Be explicite
+  "category_label": here it's `Plug-in`
+  "branding": 
+    "image_uri": the url of your icon viz (if you have it or empty string `""`
+    "tagline": a simple description of your viz and viz functions.
+   "constants": {
+        "VIS_LABEL":
+            "label": you can use the same as LABEL.value (or not)
+            "description": "This label will appear in the visualization selector in the Looker Explore UI."
+        "VIS_ID":
+            "label":you can use the same as VIS_ID (or not)
+            "description": "This must be a unique ID across all visualizations.",
+            "value_constraint": "visualization"
+
 ## Dev local
 
 Go in your folder, where you can find your minified code JS.
