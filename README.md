@@ -19,12 +19,14 @@ To compile your code
 # Add in Looker
 
 Files you need in your repo at the root for Looker when you will use your repo GitHub
-**your_file.js** : The minified distribution file of this visualization.
-**LICENSE** : Looker marketplace content license file (this one is not required for it to work, but better to have it when it is finished if you want to post on the marketplace)
-**manifest.lkml** : Le fichier de configuration des dépendances externes de Looker. L'objet de la visualisation est défini ici
-- VIS_LABEL.value : the name of your viz
-- VIS_ID.value: an unique id for your viz
-**marketplace.json** :  A JSON file containing information that the marketplace installer uses to configure this project.
+- **your_file.js** : The minified distribution file of this visualization.
+- **LICENSE** : Looker marketplace content license file (this one is not required for it to work, but better to have it when it is finished if you want to post on the marketplace)
+- **manifest.lkml** : Le fichier de configuration des dépendances externes de Looker. L'objet de la visualisation est défini ici
+```
+ VIS_LABEL.value : the name of your viz
+ VIS_ID.value: an unique id for your viz
+```
+- **marketplace.json** :  A JSON file containing information that the marketplace installer uses to configure this project.
 ```
 "label": you can use the same name as your LABEL.value or another name. Be explicite
 "category_label": here it's `Plug-in`
