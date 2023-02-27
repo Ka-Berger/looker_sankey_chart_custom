@@ -9,7 +9,7 @@ var webpackConfig = {
   },
   output: {
     filename: "[name]_custom.js",
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname),
     library: "[name]",
     libraryTarget: "umd"
   },
