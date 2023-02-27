@@ -1,8 +1,11 @@
 {
-  "name": "custom-sankey-chart",
+  "name": "sankey-custom-chart",
   "version": "0.0.1",
-  "description": "A sankey custom chart",
-  "main": "",
+  "license": "MIT",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --config webpack.config.js --watch --progress",
@@ -13,13 +16,8 @@
   "author": "ka-dev",
   "private": true,
   "devDependencies": {
-    "@types/jquery": "^3.3.31",
     "css-loader": "^0.28.11",
     "d3": "^4.8.0",
-    "jquery": "^3.3.1",
-    "jsdom": "^11.11.0",
-    "pivottable": "^2.20.0",
-    "subtotal-multiple-aggregates": "4mile/subtotal-multiple-aggregates",
     "to-string-loader": "^1.1.5",
     "ts-loader": "6.2.1",
     "tslint": "5.8.0",

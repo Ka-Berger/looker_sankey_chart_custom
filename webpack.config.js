@@ -5,12 +5,10 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var webpackConfig = {
   mode: 'production',
   entry: {
-    v1_common: './src/common/common-entry.js',
-  //  hello_world: './src/examples/hello_world/hello_world.js',
-    sankey: './src/chart/sankey/sankey_custom.ts',
+    sankey: './src/sankey/sankey_custom.ts',
   },
   output: {
-    filename: "[name].js",
+    filename: "[name]_custom.js",
     path: path.join(__dirname, "dist"),
     library: "[name]",
     libraryTarget: "umd"
@@ -25,11 +23,7 @@ var webpackConfig = {
     rules: [
       { test: /\.js$/, loader: "babel-loader" },
       { test: /\.ts$/, loader: "ts-loader" },
-      { test: /\.css$/, loader: [ 'to-string-loader', 'css-loader' ] }
     ]
-  },
-  stats: {
-    warningsFilter: /export.*liquidfillgauge.*was not found/
   },
   performance: {
     hints: false,

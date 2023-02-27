@@ -1,4 +1,4 @@
-project_name: "sankey-custom-chart-marketplace"
+project_name: "sankey-custom-chart"
 
 constant: VIS_LABEL {
   value: "Sankey Custom Chart"
@@ -6,7 +6,7 @@ constant: VIS_LABEL {
 }
 
 constant: VIS_ID {
-  value: "sankey-custom-chart-marketplace"
+  value: "sankey-custom-chart"
   export:  override_optional
 }
 
