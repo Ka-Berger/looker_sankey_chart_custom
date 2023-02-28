@@ -26,13 +26,11 @@ const vis: Sankey = {
       type: 'array',
       label: 'Color Range',
       display: 'colors',
-      default: ['#0e1080', '#741b47', '#135358', '#5c5ca9', '#a56c88',
-        '#D9E3E4', '#a9a8d1', '#ddd1df','#4D2B77',
-        '#7473B4', '#663399', '#3CB371', '#BA55D3',
-        '#F9AB00', '#DA70D6', '#008000', '#8A2BE2',
-        '#E52592', '#6A5ACD', '#80868B', '#66CDAA',
-        '#a6e86e', '#c12fe8', '#181ee8', '#008B8B',
-        '#1ae3e8', '#191970', '#4682B4'
+      default: ['#BA55D3', '#56fac9', '#bf1864', '#07c4d4',
+      '#b2f5b2', '#b5beeb', '#131eb2', '#663399', '#eb636c',
+      '#BA55D3', '#56fac9', '#6bc0ff', '#008000', '#b99deb',
+      '#2659eb', '#80868B', '#66CDAA', '#fab5af', '#c12fe8',
+      '#181ee8', '#a1ebc8', '#1ae3e8', '#191970', '#4682B4'
       ]
     },
     label_type: {
