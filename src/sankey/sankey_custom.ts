@@ -33,6 +33,14 @@ const vis: Sankey = {
       '#181ee8', '#a1ebc8', '#1ae3e8', '#191970', '#4682B4'
       ]
     },
+    label_color: {
+      type: 'string',
+      label: 'test',
+      values: [
+        { 'Name': 'source' },
+        { 'Name (value)': 'name_value' }
+      ]
+    },
     label_type: {
       default: 'name',
       display: 'select',
@@ -225,6 +233,12 @@ const vis: Sankey = {
       // const stopColor = color(d.target.name.replace(/ .*/, ''))
       const startColor = color(d.source.name)
       const stopColor = color(d.source.name)
+      console.log("source.name")
+      console.log(d.source.name)
+      console.log("name")
+      console.log(d.name)
+      console.log("query")
+      console.log(queryResponse)
 
       const linearGradient = defs.append('linearGradient')
         .attr('id', gradientID)
@@ -284,7 +298,7 @@ const vis: Sankey = {
             return d.name
           case 'name_value':
           //  return `${d.name} (${!!val_format ? SSF(val_format, d.value) : d.value})`
-            return `${d.name} : ${d.value.toLocaleString('en-US')}`
+            return `${d.name} : ${d.value.toLocaleString()}`
           default:
             return ''
         }
