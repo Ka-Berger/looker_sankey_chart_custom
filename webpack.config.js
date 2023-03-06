@@ -6,6 +6,7 @@ var webpackConfig = {
   mode: 'production',
   entry: {
     sankey_custom: './src/sankey/sankey_custom.ts',
+    //waterfall_custom: './src/waterfall/waterfall_custom.ts',
   },
   output: {
     filename: "[name].js",

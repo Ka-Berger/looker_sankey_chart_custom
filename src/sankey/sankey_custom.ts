@@ -33,22 +33,16 @@ const vis: Sankey = {
       '#181ee8', '#a1ebc8', '#1ae3e8', '#191970', '#4682B4'
       ]
     },
-    label_color: {
-      type: 'string',
-      label: 'test',
-      values: [
-        { 'Name': 'source' },
-        { 'Name (value)': 'name_value' }
-      ]
-    },
     label_type: {
       default: 'name',
       display: 'select',
       label: 'Label Type',
       type: 'string',
       values: [
+        { "Name : value (percentage)": "name_value_percentage" },
         { 'Name': 'name' },
-        { 'Name (value)': 'name_value' }
+        { 'Name : value': 'name_value' },
+        { "Name : percentage": "name_percentage" }
       ]
     },
     show_null_points: {
@@ -88,6 +82,7 @@ const vis: Sankey = {
 
     const dimensions = queryResponse.fields.dimension_like
     const measure = queryResponse.fields.measure_like[0]
+    const total = d3.sum(data, (d) => d[measure.name]["value"]);
     const val_format = measure.value_format
 
     // config object is not set properly on DB-next
@@ -233,13 +228,6 @@ const vis: Sankey = {
       // const stopColor = color(d.target.name.replace(/ .*/, ''))
       const startColor = color(d.source.name)
       const stopColor = color(d.source.name)
-      console.log("source.name")
-      console.log(d.source.name)
-      console.log("name")
-      console.log(d.name)
-      console.log("query")
-      console.log(queryResponse)
-
       const linearGradient = defs.append('linearGradient')
         .attr('id', gradientID)
 
@@ -294,13 +282,17 @@ const vis: Sankey = {
       .style('fill', '#222')
       .text(function (d: Cell) {
         switch (config.label_type) {
+          case "name_value_percentage":
+              return `${d.name} : ${d.value.toLocaleString()} (${Math.round((100 * d.value) / total)}%)`;
           case 'name':
-            return d.name
+            return d.name;
           case 'name_value':
           //  return `${d.name} (${!!val_format ? SSF(val_format, d.value) : d.value})`
-            return `${d.name} : ${d.value.toLocaleString()}`
+            return `${d.name} : ${d.value.toLocaleString()}`;
+          case "name_percentage":
+            return `${d.name} : ${Math.round((100 * d.value) / total)}%`;
           default:
-            return ''
+            return '';
         }
       })
       .filter(function (d: Cell) { return d.x0 < width / 2 })

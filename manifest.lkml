@@ -1,12 +1,12 @@
-project_name: "sankey-custom-chart"
+project_name: "sankey-custom-chart-v1"
 
 constant: VIS_LABEL {
-  value: "Sankey Custom Chart"
+  value: "Sankey Custom Chart V1"
   export: override_optional
 }
 
 constant: VIS_ID {
-  value: "sankey-custom-chart"
+  value: "sankey-custom-chart-v1"
   export:  override_optional
 }
 

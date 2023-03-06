@@ -1,5 +1,5 @@
 {
-  "label": "Sankey Custom Chart",
+  "label": "Sankey Custom Chart V1",
   "category_label": "Plug-ins",
   "branding": {
     "image_uri": "",
@@ -7,11 +7,11 @@
   },
    "constants": {
         "VIS_LABEL": {
-            "label": "Sankey Label",
+            "label": "Sankey Label V1",
             "description": "This label will appear in the visualization selector in the Looker Explore UI."
         },
         "VIS_ID": {
-            "label": "kb_sankey_Id",
+            "label": "kb_sankey_v1_Id",
             "description": "This must be a unique ID across all visualizations.",
             "value_constraint": "visualization"
         }
